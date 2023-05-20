@@ -2,9 +2,7 @@
 <html>
 <head>
   <title>Revenge Of The Retards Site</title>
-      <audio src="placeholdersong.mp3" autoplay loop class="audio-player">
-      Your browser does not support the audio element.
-    </audio>
+  <meta property="og:description" content="A project that i felt like making" />
   <style>
     .image-container {
       position: fixed;
@@ -54,15 +52,15 @@
     </div>
     <a href="https://gamejolt.com/games/ROTR/752235">Gamejolt Page</a>
   </div>
-
+	<audio src="placeholdersong.mp3" controls autoplay loop style="position: absolute;">
+		<p>If you are reading this, it is because your browser does not support the audio element.</p>
+		<embed name="GOod!" src="placeholdersong.mp3" loop="true" hidden="true" autostart="true">
+	</audio>
   <script>
     // Optional: Preload the image and audio before starting the animation
     const image = new Image();
     image.src = "woah tiles.png";
-
-    const audio = new Audio();
-    audio.src = "placeholdersong.mp3";
-
+	
     window.onload = function() {
       const imageWidth = document.querySelector('.scrolling-image').clientWidth;
       const containerWidth = document.querySelector('.image-container').clientWidth;
